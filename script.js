@@ -3,14 +3,23 @@ const cursor_circle = document.querySelector('.cursor_circle');
 // const cursor = document.querySelector('.cursor');
 const interactiveElements = document.querySelectorAll("a, button");
 console.log(interactiveElements);
-const cursorRadius = 5;
+const cursorRadius = 4;
 const cursorCircleRadius = 15;
 let cursorX = 0;
 let cursorY = 0;
-
+let timer = null;
 document.addEventListener('mousemove', e => {
+
+    clearTimeout(timer);
+    
+    cursor_dot.classList.remove('is-hide');
+    cursor_circle.classList.remove('is-hide');
     cursorX = e.clientX;
     cursorY = e.clientY;
+    timer = setTimeout(function () {
+        cursor_dot.classList.add('is-hide');
+        cursor_circle.classList.add('is-hide');
+      }, 1000);
 });
 interactiveElements.forEach(e=>{
     e.addEventListener("mouseover", e=>{
