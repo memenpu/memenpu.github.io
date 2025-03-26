@@ -2,42 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kangle's Portfolio</title>
+    <title>PixiJS Custom Cursor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://pixijs.download/release/pixi.js"></script>
 </head>
 <body>
+  
     <header>
-
-        <!-- greeting.. image.. intro    -->
-        <h1>Welcome to My Portfolio</h1>
+      <h1>Welcome to Kangle's Portfolio
+        <p>I'm a software engineer with a passion for building web applications and mobile apps.</p>
+      </h1>
+      
     </header>
     <main>
-        
-    <!-- <p>This is my GitHub Pages portfolio site!</p> -->
-        <!-- projects -->
-         <!-- work exp -->
-          <!-- education -->
+      <h2>Projects</h2>
+      <p>Here are some of my projects:</p>
+      <ul>
+        <li><a href="https://github.com/memenpu/c--aws-api-applications">aws-api-applications</a></li>
+        <li><a href="https://github.com/kanglej/kanglej.github.io">My Portfolio</a></li>
+        <li><a href="https://github.com/kanglej/kanglej.github.io">My Portfolio</a></li>
+      </ul>
+      <button >Click me</button>
+      <a href="https://github.com/kanglej/kanglej.github.io" >My Portfolio</a>
     </main>
-    <footer></footer>
+    <footer>2025 &copy; Kangle J</footer>
+  <div class="cursor_circle">
+  </div>
+  <div class="cursor_dot">    
+</div>
+    
+    <script type="module" src="script.js"></script>
 </body>
-<script type="module">
-    // Create the application helper and add its render target to the page
-    const app = new PIXI.Application();
-      await app.init({ width: 640, height: 360 })
-      document.body.appendChild(app.canvas);
-
-      // Create the sprite and add it to the stage
-      await PIXI.Assets.load('sample.png');
-      let sprite = PIXI.Sprite.from('sample.png');
-      app.stage.addChild(sprite);
-
-      // Add a ticker callback to move the sprite back and forth
-      let elapsed = 0.0;
-      app.ticker.add((ticker) => {
-        elapsed += ticker.deltaTime;
-        sprite.x = 100.0 + Math.cos(elapsed/50.0) * 100.0;
-      });
-  </script>
 </html>
