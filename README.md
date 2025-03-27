@@ -1,4 +1,4 @@
-memenpu.github.io
 
+repository: [github.com/memenpu/memenpu.github.io](https://github.com/memenpu/memenpu.github.io) 
 
-Github page: [sit page](https://memenpu.github.io)
+Source code for this: [page](https://memenpu.github.io)
