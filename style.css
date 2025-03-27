@@ -62,7 +62,8 @@ body {
 }
 
 .container{
-    margin: 10px;
+    width: clamp(200px, 80vw, 800px);
+    margin: auto;
 }
 
 header, footer{

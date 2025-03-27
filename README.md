@@ -1,4 +1,4 @@
-"# memenpu.github.io" 
+memenpu.github.io
 
 
-[github_page](https://memenpu.github.io)
+Github page: [sit page](https://memenpu.github.io)
